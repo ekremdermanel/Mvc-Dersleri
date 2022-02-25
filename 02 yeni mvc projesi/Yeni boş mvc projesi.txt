@@ -1,0 +1,45 @@
+dotnet new web
+
+Startup.cs dosyasında
+    ConfigureServices metoduna
+    services.AddControllersWithViews();
+    kodunu ekle
+
+    Configure metodunda
+
+    app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapGet("/", async context =>
+                {
+                    await context.Response.WriteAsync("Hello World!");
+                });
+            });
+    kodunu sil, yerine
+
+    app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
+    kodunu ekle.
+
+Controllers klasörü oluştur
+
+Controllers klasörüne sağ tıkla New - C# - Class seçeneği ile HomeController oluştur.
+
+Sınıf tanımlamayı public class HomeController : Controller olarak değiştir
+
+Microsoft.AspNetCore.Mvc kütüphanesini ekle
+
+Index IActionResult oluştur
+  public IActionResult Index()
+  {
+    return View();
+  }
+
+Index action ına sağ tıkla - Add View
+
+Views - Home klasöründeki Index view dosyasını aç ve html kodlarını düzenle
+
+dotnet run ile çalıştır.

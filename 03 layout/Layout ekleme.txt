@@ -1,0 +1,29 @@
+Views klasörü altında Shared klasörü oluştur
+
+Shared altına _Layout.cshtml dosyası oluştur
+
+Layout dosyasına html kodlarını ekle ve @RenderBody() komutunu kullan
+
+Index, Hakkimizda vs. viewlara alttaki kodu ekle
+@{
+Layout = "_Layout";
+}
+
+
+BİR LAYOUT'U TÜM VIEWLAR İÇİN VARSAYILAN YAPMA
+
+Views klasörüne _ViewStart.cshtml dosyası ekle ve alttaki kodu yaz
+@{
+    Layout = "_Layout";
+}
+
+Bu işlem yapıldığında her view için layout kodu yazmaya gerek kalmaz.
+Eğer view'da farklı bir layout kullanıalcaksa veya hiçbir layout kullanılmayacaksa ayrıca belirtilebilir.
+
+@{
+    Layout = "_Layout2";
+}
+
+@{
+    Layout = null;
+}
