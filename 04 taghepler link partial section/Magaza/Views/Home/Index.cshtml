@@ -1,0 +1,76 @@
+<!-- Slogan -->
+    <header class="py-2 bg-light border-bottom">
+        <div class="container">
+            <div class="text-center my-2">
+                <h1 class="fw-bolder">Alışverişe Başla</h1>
+                <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quos?</p>
+            </div>
+        </div>
+    </header>
+    <!-- Icerik -->
+    <div class="container mt-4">
+        <div class="row mb-3">
+            <!-- Ana Bolum -->
+            <div class="col-lg-8">
+                <!-- Vitrin -->
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/image/urun.png" alt="..." />
+                    <div class="card-body">
+                        <h2 class="card-title">Ürün</h2>
+                        <p class="card-text small">50 TL</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+                            libero!</p>
+                        <a asp-controller="Urun" asp-action="Detay" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/image/urun.png" alt="..." />
+                    <div class="card-body">
+                        <h2 class="card-title">Ürün</h2>
+                        <p class="card-text small">50 TL</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+                            libero!</p>
+                        <a asp-controller="Urun" asp-action="Detay" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <img class="card-img-top" src="~/image/urun.png" alt="..." />
+                    <div class="card-body">
+                        <h2 class="card-title">Ürün</h2>
+                        <p class="card-text small">50 TL</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+                            libero!</p>
+                        <a asp-controller="Urun" asp-action="Detay" class="btn btn-primary">Detay</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Yan Menu -->
+            <div class="col-lg-4">
+
+                <partial name="_Arama"></partial>
+
+                <!-- Kategoriler -->
+                <div class="card mb-4">
+                    <div class="card-header">Kategoriler</div>
+                    <div class="card-body p-0">
+                        <div class="list-group-flush">
+                            <a class="list-group-item" href="#!">Kategori 1</a>
+                            <a class="list-group-item" href="#!">Kategori 2</a>
+                            <a class="list-group-item" href="#!">Kategori 3</a>
+                        </div>
+                    </div>
+                </div>      
+                
+                <partial name="_Iletisim"></partial>
+
+            </div>
+        </div>
+    </div>
+
+
+    @section Duyuru {
+        <li class="nav-item"><button type="button" class="btn btn-danger me-2">Büyük İndirim</button></li>
+    }
