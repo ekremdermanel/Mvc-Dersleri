@@ -1,0 +1,30 @@
+DOLU MVC PROJESİ OLUŞTURMA
+
+Yeni klasör oluştur ve Vs Code ile aç
+Klasör adı proje adı olacağı için türkçe karakter, boşluk vs kullanma
+
+Terminal menüsü - New Terminal
+Termimale aşağıdaki komutu yaz.
+dotnet new mvc
+
+Örnek 2 sayfalı
+Controllers, Views, Models, Layout vs hazır bir proje gelir.
+
+
+PROJE ÇALIŞTIRMA
+dotnet run
+veya
+dotnet watch (Değişiklikleri gözler ve sayfayı yeniler)
+
+
+
+YENİ SAYFA EKLEME
+HomeController içersine Iletisim action ı oıluştur.
+Iletisim action ına sağ tıkla Add View ile tasarım dosyası oluştur.
+Views klasöründeki Iletisim.cshtml yi düzenle
+
+Klasöre New File seçeneği ile KitapController dosyası oluştur.
+Tüm kodları silerek mvc-controller kısayolu ile kodları yazdır.
+Index action ına sağ tıkla Add View ile tasarım dosyası oluştur.
+Yeni action eklemek için mvc-action kısayolunu kullan.
+Detay action ve view oluştur.

@@ -1,0 +1,17 @@
+Yeni Layout (Şablon) Oluşturma
+
+Views - Shared klasörü oluştur.
+_Layout.cshtml dosyası ekle
+Html kodarını yaz, sayfalarda değişecek alana @RenderBody() yaz
+
+Bir sayfaya şablonu atamak
+Sayfanın view kodlarının en üstüne ekle
+@{
+    Layout = "_Layout";
+}
+
+Tüm sayfalara varsayılan layout atamak
+Views - _ViewStart.cshtml oluştur ve layout kodunu ekle
+@{
+    Layout = "_Layout";
+}

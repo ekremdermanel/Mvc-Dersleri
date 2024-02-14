@@ -1,7 +1,0 @@
-Startup.cs dosyasında Configure metoduna
-app.UseStaticFiles();
-kodunu ekle
-
-Ana dizine wwwroot kalsörü oluştur ve kullanılacak resim,css,js vs dosyaları buraya kopyala
-
-NOT: Dosyaları çağırmak için ~/ işareti kullanılırsa ana dizindeki wwwroot klasörüne bakılır.

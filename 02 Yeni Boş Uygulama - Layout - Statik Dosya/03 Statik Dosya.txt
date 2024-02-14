@@ -1,0 +1,8 @@
+Program.cs dosyasına ekle
+app.UseStaticFiles();
+
+
+Projeye wwwroot adlı klasör oluştur
+Tüm css, js, resim vs dosyaları bu klasöre ekle
+
+Dosyaları çağırırken wwwroot klasörü yerine ~/ simgesini kullan

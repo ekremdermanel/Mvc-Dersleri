@@ -1,0 +1,26 @@
+BOŞ WEB UYGULAMASI OLUŞTURMA
+
+MagazaWeb klasörü oluştur ve Vs Code ile aç
+
+Termimale aşağıdaki komutu yaz.
+dotnet new web
+
+Sadece gerekli dosyaların olduğu boş bir proje gelir.
+
+Program.cs dosyası
+
+Alttaki satırı sil:
+app.MapGet("/", () => "Hello World!");
+
+Yeni kodları değişken tanımlarından sonraki satıralara ekle:
+builder.Services.AddControllersWithViews();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+Controllers klasörü oluştur
+Klasöre New File seçeneği ile HomeController dosyası oluştur.
+Tüm kodları silerek mvc-controller kısayolu ile kodları yazdır.
+Index action ına sağ tıkla Add View ile tasarım dosyası oluştur.
+Yeni action eklemek için mvc-action kısayolunu kullan.
