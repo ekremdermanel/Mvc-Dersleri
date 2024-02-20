@@ -1,0 +1,16 @@
+Layout dosyasına Duyuru adlı bölüm (section) oluştur.
+
+@RenderSection("Duyuru",false)
+
+Ana sayfa view dosyasının en altına bu bölümde görünecek içeriği ekle
+
+@section Duyuru {
+  <li class="nav-item"><button type="button" class="btn btn-danger me-2">Büyük İndirim</button></li>
+}
+
+Ürünler view dosyasının en altına bu bölümde görünecek içeriği ekle
+
+@section Duyuru {
+    <li class="nav-item"><button type="button" class="btn btn-success me-2">3 Al 1 Öde</button></li>
+    <li class="nav-item"><button type="button" class="btn btn-primary me-2">Kredi Kartına 5 Taksit</button></li>
+}

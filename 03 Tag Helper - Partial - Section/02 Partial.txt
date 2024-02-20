@@ -1,0 +1,12 @@
+Shared klasörüne _Slogan.cshtml dosyası ekle (partial view)
+
+Ana Sayfa ve Hakkımızda sayfasından aşağıdaki kod ile _Slogan.cshtml dosyasını çağır
+
+@{
+  Html.RenderPartial("_Slogan");
+}
+
+
+Aynı işlemi Tag Helper kullanarak yap
+
+<partial name="_Slogan"></partial>

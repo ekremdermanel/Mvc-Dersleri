@@ -1,0 +1,90 @@
+@{
+    var baslik = "Merhaba Hoşgeldin";
+    var sayi = 20;
+}
+
+<div class="bg-dark text-light p-3 my-3">
+    <h1>@baslik</h1>
+    <h2>Verilen sayı değeri @sayi</h2>
+</div>
+
+<div class="bg-dark text-light p-3 my-3">
+    @{
+        var mesaj = "Bu mesaj yazısı";  
+        @mesaj
+        
+        <br>
+
+        var tarih = DateTime.Today.Date.ToShortDateString();
+        <text>Bugünkü tarih: </text> @tarih
+
+        <br>
+
+        @: Bugün, ayın @DateTime.Today.Day . günü
+
+    }
+</div>
+
+<div class="bg-dark text-light p-3 my-3">
+    @if(sayi>10) {
+        @sayi @: sayısı 10 dan büyüktür
+    } else if(sayi<10) {
+        @sayi  @: sayısı 10 dan küçüktür
+    } else  {
+        @sayi  @: sayısı 10 a eşittir
+    }
+</div>
+
+@{
+    string arkaplan = "bg-danger";
+}
+
+<div class="@arkaplan text-light p-3 my-3">
+    @{
+        var haftaninGunu = DateTime.Now.DayOfWeek;
+        if(haftaninGunu==DayOfWeek.Saturday || haftaninGunu==DayOfWeek.Sunday) {
+            <p class="bg-warning">Haftasonu</p>
+        } else {
+            <p class="bg-primary">Haftaiçi</p>
+        }
+    }
+</div>
+
+<div class="bg-dark text-light p-3 my-3">
+    @for (int i = 0; i < 10; i++)
+    {
+        <p>Döngüdeki @i . sayı</p>
+    }
+</div>
+
+@{
+    int boyut = 10;
+}
+<div class="bg-dark text-light p-3 my-3">
+    @for (int i = 1; i <= 10; i++)
+    {
+        <p style="font-size: @(boyut)px;">@i. satır</p>
+        boyut+=2;
+    }
+</div>
+
+<div class="bg-dark text-light p-3 my-3">
+    @for (int i = 1; i <= 10; i++)
+    {
+        <p class="@((i%2==1) ? "bg-warning" : "bg-danger")">@i. satır</p>
+    }
+</div>
+
+@{
+    
+    List<string> liste = new List<string>(){ "Mehmet","Aslı","Fatma" };
+    liste.Add("Ahmet");
+    liste.Add("Ayşe");
+}
+
+<div class="bg-dark text-light p-3 my-3">
+    @foreach (var item in liste)
+    {
+        <p>@item</p>
+    }
+</div>
