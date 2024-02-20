@@ -1,3 +1,5 @@
+@using MagazaWeb.Models
+
 @{
     var baslik = "Merhaba Hoşgeldin";
     var sayi = 20;
@@ -57,6 +59,16 @@
     }
 </div>
 
+<div class="bg-dark text-light p-3 my-3">
+    @for (int i = 0; i < 10; i++)
+    {
+        <p>
+            <img src="~/image/urun.png" style="height: 30px;" alt="">
+            Döngüdeki @i . sayı
+        </p>
+    }
+</div>
+
 @{
     int boyut = 10;
 }
@@ -86,5 +98,27 @@
     @foreach (var item in liste)
     {
         <p>@item</p>
+    }
+</div>
+
+@{
+    
+    List<Ogrenci> ogrenciler = new List<Ogrenci>();
+
+    Ogrenci ogrenci1 = new Ogrenci();
+    ogrenci1.adSoyad="Ahmet Sarı";
+    ogrenci1.puan=40;
+    ogrenciler.Add(ogrenci1);
+
+    Ogrenci ogrenci2 = new Ogrenci();
+    ogrenci2.adSoyad="Ayşe Kara";
+    ogrenci2.puan=70;
+    ogrenciler.Add(ogrenci2);
+}
+
+<div class="bg-dark text-light p-3 my-3">
+    @foreach (var item in ogrenciler)
+    {
+        <p>@item.adSoyad (@item.puan)</p>
     }
 </div>
