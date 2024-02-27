@@ -1,0 +1,44 @@
+CLASS EKLEME
+
+Models klasörü oluştur
+Klasöre sağ tıkla - New C# - Class
+Ogrenci sınıfı oluştur
+
+public class Ogrenci
+{
+    public string adSoyad;
+    public int puan;
+}
+
+
+
+Views - Home - Index.cshtml ilk satırda Models klasörünü çağır
+
+@using MagazaWeb.Models
+
+Her view dosyasında tek tek Models klasörü çağırmak yerine bu satırı _ViewImports.cshtml ye ekle
+
+
+Views - Home - Index.cshtml ekle
+
+@{
+    
+    List<Ogrenci> ogrenciler = new List<Ogrenci>();
+
+    Ogrenci ogrenci1 = new Ogrenci();
+    ogrenci1.adSoyad="Ahmet Sarı";
+    ogrenci1.puan=40;
+    ogrenciler.Add(ogrenci1);
+
+    Ogrenci ogrenci2 = new Ogrenci();
+    ogrenci2.adSoyad="Ayşe Kara";
+    ogrenci2.puan=70;
+    ogrenciler.Add(ogrenci2);
+}
+
+<div class="bg-dark text-light p-3 my-3">
+    @foreach (var item in ogrenciler)
+    {
+        <p>@item.adSoyad (@item.puan)</p>
+    }
+</div>

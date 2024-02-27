@@ -68,7 +68,7 @@ Gönderilen listeyi döngüye alarak ekranda göster
 ilk ürün hariç diğer ürün div lerini sil
 
 foreach döngüsü ile listeleme yap
-Döngü içine ygun yerlere @item.UrunAdi, @item.Fiyat yazdır
+Döngü içine uygun yerlere @item.UrunAdi, @item.Fiyat yazdır
 
 @foreach (var item in Model)
 { 
