@@ -1,0 +1,25 @@
+<partial name="_Slogan"></partial>
+
+<p class="text-danger mt-2">@TempData["Hata"]</p>
+@model List<string>
+
+<!-- Icerik -->
+<div class="row mt-4">
+    <div class="col">
+        <img class="img-fluid rounded-start" src="~/image/urun.png" alt="..." />
+    </div>
+    <div class="col">
+        <h2>Hoşgeldiniz @ViewBag.Yazi</h2>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@item</li>
+            }
+        </ul>
+    </div>
+</div>
+
+
+@section Duyuru {
+    <li class="nav-item"><button type="button" class="btn btn-danger me-2">Büyük İndirim</button></li>
+}

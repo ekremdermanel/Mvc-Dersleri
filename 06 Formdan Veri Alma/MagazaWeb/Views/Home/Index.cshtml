@@ -1,0 +1,22 @@
+<form method="post" asp-action="Yukle" enctype="multipart/form-data">
+    <h2>Formdan Veri Gönder</h2>
+    <div class="mt-3">
+        <div class="mb-3">
+            <label for="adsoyad" class="form-label">Ad Soyad</label>
+            <input type="text" name="adsoyad" id="adsoyad" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="sinav1" class="form-label">1. Sınav</label>
+            <input type="text" name="sinav1" id="sinav1" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="sinav2" class="form-label">2. Sınav</label>
+            <input type="text" name="sinav2" id="sinav2" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="resim" class="form-label">Resim</label>
+            <input type="file" name="resim" id="resim" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Gönder</button>
+    </div>
+</form>
