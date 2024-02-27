@@ -1,0 +1,53 @@
+MODEL
+
+Urun - Detay action ına değişken tanımla ve view a gönder
+
+public IActionResult Detay()
+{
+  int sayi = 5;
+  return View(sayi);
+}
+
+Detay View unda ilk satırda string tipinde model tanımla
+@model int
+
+Detay view una gönderilen ürün adı modelini ekranda göster
+@Model Numaralı Ürün
+
+
+
+Home - Hakkimizda action ına değişken tanımla ve view a gönder
+
+public IActionResult Hakkimizda()
+{
+  string slogan = "En İyi Ürünler Burada";
+  return View((object)slogan);
+}
+
+Detay View unda ilk satırda string tipinde model tanımla
+@model string
+
+Detay view una gönderilen ürün adı modelini ekranda göster
+@Model
+
+
+
+Home - Index action ına string listesi tanımla ve view a gönder
+
+public IActionResult Index()
+{
+  List<string> maddeler = new List<string>() {"Ucuz","Kalitesiz","Yavaş","Kargo Yok","Vergisi Yüksek"};
+  return View(maddeler);
+}
+
+
+
+Urun - Index View unda ilk satırda string listesi tipinde model tanımla
+@model List<string>
+
+
+@foreach (var item in Model)
+{
+  <li>@item</li>
+}
+

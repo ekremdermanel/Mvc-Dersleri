@@ -1,0 +1,76 @@
+CLASS OLUŞTURUP NESNELERİ MODEL OLARAK GÖNDERME
+
+
+Models - Urun classı tanımla
+
+public class Urun
+{
+  public int Id;
+  public string UrunAdi;
+  public decimal Fiyat;
+  public string Aciklama;
+}
+
+
+UrunController da Models klasörünü çağır.
+using MagazaWeb.Models;
+
+
+
+
+UrunController - Detay action ına Urun tanımla ve view a gönder
+
+public IActionResult Detay()
+{ 
+Urun urun = new Urun { Id = 5, UrunAdi = "Huawei P40", Fiyat = 30000, Aciklama = "Güzel ürün" };
+      
+return View(urun);
+}
+
+
+Models klasöründeki sınıflara tüm View lardan MagazaWeb.Models yazmadan direk sınıf adıyla erişmek için _ViewImports.cshtml dosyasına ekle
+@using MagazaWeb.Models
+
+Views - Urun - Detay.cshtml view dosyasındaki model tipini düzenle
+@model Urun
+
+Ürün bilgilerini sayfada uygun yerlere yazdır
+@Model.UrunAdi
+@Model.Fiyat
+@Model.Aciklama
+
+
+
+
+
+
+UrunController - Index action ına Urun listesi tanımla ve view a gönder
+
+public IActionResult Index()
+{
+  List<Urun> urunler = new List<Urun> {
+    new Urun { Id = 1, UrunAdi = "Iphone 14", Fiyat = 40000, Aciklama = "Çok pahalı almayın" },
+    new Urun { Id = 2, UrunAdi = "Samsung A22", Fiyat = 30000, Aciklama = "Güzel ürün" },
+    new Urun { Id = 3, UrunAdi = "Xiaomi Note 9", Fiyat = 15000, Aciklama = "İyi" },
+    new Urun { Id = 4, UrunAdi = "Noika 3310", Fiyat = 1000, Aciklama = "Tuğla" },
+    new Urun { Id = 5, UrunAdi = "Huawei P40", Fiyat = 30000, Aciklama = "Güzel ürün" },
+    new Urun { Id = 6, UrunAdi = "Oppo A15", Fiyat = 15000, Aciklama = "Kamerası iyi" }
+  };
+
+  return View(urunler);
+}
+
+
+Views- Urun - Index.cshtml view unda ilk satırda Urun listesi tipinde model tanımla
+@model List<Urun>
+
+Gönderilen listeyi döngüye alarak ekranda göster
+ilk ürün hariç diğer ürün div lerini sil
+
+foreach döngüsü ile listeleme yap
+Döngü içine ygun yerlere @item.UrunAdi, @item.Fiyat yazdır
+
+@foreach (var item in Model)
+{ 
+  @item.UrunAdi ,   @item.Fiyat 
+}

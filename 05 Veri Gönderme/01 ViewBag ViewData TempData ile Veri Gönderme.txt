@@ -1,0 +1,44 @@
+Controller dan View'a veri göndermek için farklı yöntemler vardır.
+ViewBag, ViewData, Tempdata, Model
+
+Küçük boyutlu veriler (sayfa başlığı, uyarı mesajı vs) ViewBag, ViewData ve TempData ile gönderilebilir.
+
+Değişken, nesne, liste, form içerikleri için model kullanılır.
+
+VIEWBAG
+
+HomeController Index action a yaz
+ViewBag.Yazi = "Merhaba, Sitemize Hoşgeldiniz!";
+
+Index View'unda bu değişkeni görüntülemek için HTML kodlarına yaz
+@ViewBag.Yazi
+
+VIEWDATA
+
+ViewBag ile aynı görevi yapar, daha yeni teknolojidir.
+Daha hızlı çalışır, ViewBag yerine tercih edilmelidir.
+
+HomeController Index action a yaz
+ViewData["Baslik"] = "Ana Sayfa";
+
+HomeController Hakkimizda action a yaz
+ViewData["Baslik"] = "Hakkımızda";
+
+Layout title etikelerine yaz ve tüm sayfaların başlık alanında ViewData değeri görünsün
+@ViewData["Baslik"]
+
+TEMPDATA
+
+Kullanımı ViewData gibidir.
+Controller da farklı bir action a yönlendirme yapılırsa ViewData taşınmaz fakat TempData taşınır, yani değerini korur.
+
+HomeController a Profil action ekle
+
+public IActionResult Profil()
+{
+  TempData["Hata"] = "Profil Sayfası İçin Yetkiniz Yok";
+  return RedirectToAction("Index");
+}
+
+Ana sayfa View dosyasında (Home / Index) Hata mesajını göster
+<p class="text-danger mt-2">@TempData["Hata"]</p>
