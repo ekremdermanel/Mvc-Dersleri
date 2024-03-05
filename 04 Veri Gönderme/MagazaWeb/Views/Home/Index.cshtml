@@ -1,0 +1,18 @@
+<p class="text-danger mt-2">@TempData["Hata"]</p>
+@model List<string>
+
+<!-- Icerik -->
+<div class="row mt-4">
+    <div class="col">
+        <img class="img-fluid rounded-start" src="~/image/urun.png" alt="..." />
+    </div>
+    <div class="col">
+        <h2>Hoşgeldiniz @ViewBag.Yazi</h2>
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>@item</li>
+            }
+        </ul>
+    </div>
+</div>

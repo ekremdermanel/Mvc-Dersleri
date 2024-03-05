@@ -1,0 +1,34 @@
+@model Kullanici
+
+<h2>Kullanıcı Kayıt</h2>
+
+<form method="post">
+
+    <div class="mb-3">
+        <label asp-for="KullaniciAdi"></label>
+        <input asp-for="KullaniciAdi" class="form-control">
+        <span asp-validation-for="KullaniciAdi" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Sifre"></label>
+        <input asp-for="Sifre" class="form-control">
+        <span asp-validation-for="Sifre" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="SifreTekrar"></label>
+        <input asp-for="SifreTekrar" class="form-control">
+        <span asp-validation-for="SifreTekrar" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Eposta"></label>
+        <input asp-for="Eposta" class="form-control">
+        <span asp-validation-for="Eposta" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DogumTarihi"></label>
+        <input asp-for="DogumTarihi" class="form-control">
+        <span asp-validation-for="DogumTarihi" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Tamam</button>
+
+</form>

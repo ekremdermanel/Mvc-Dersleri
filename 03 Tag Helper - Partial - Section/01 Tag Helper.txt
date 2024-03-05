@@ -1,9 +1,0 @@
-Views klasörüne _ViewImports.cshtml dosyası ekle
-
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-
-
-
-Tüm linklerdeki href leri sil ve aşağıdaki gibi değiştir
-
-<a asp-controller="Home" asp-action="Index">Ana Sayfa</a>

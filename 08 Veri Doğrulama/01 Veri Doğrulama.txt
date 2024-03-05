@@ -1,0 +1,116 @@
+Yorum sınıfı tanımla
+
+public class Yorum
+{
+  [Display(Name="Yorum Konusu")]
+  [Required(ErrorMessage = "{0} alanını doldur")]
+  [StringLength(20, MinimumLength = 3, ErrorMessage = "{0} {2}-{1} karakter olmalı")]
+  public string? Konu { get; set; }  
+
+  [Display(Name="Yorum Mesajı")]
+  [Required(ErrorMessage = "{0} alanını doldur")]
+  public string? Mesaj { get; set; }
+
+  [Display(Name="Kullanıcı Puanı")]
+  [Range(0, 100, ErrorMessage = "{0} {1}-{2} arası olmalı")]
+  public int Puan { get; set; }
+}
+
+DataAnnotations kütüphanesi ekle
+
+using System.ComponentModel.DataAnnotations;
+
+
+
+
+HomeController.cs ye ekle
+
+public IActionResult YorumEkle()
+{
+  return View();
+}
+
+[HttpPost]
+public IActionResult YorumEkle(Yorum model)
+{
+  if(!ModelState.IsValid) {
+    return View(model);
+  } 
+  return RedirectToAction("YorumGonder",model);
+}
+
+public IActionResult YorumGonder(Yorum model)
+{
+  return View("YorumGonder",model);
+}
+
+
+Views - Home - YorumEkle.cshtml hazırla
+
+@model Yorum
+
+label ve input lara asp-for ile sınıfın özelliklerini yaz
+
+Hata mesajı için span ekle asp-validation-for kullan
+
+<label asp-for="Konu"></label>
+<input asp-for="Konu" class="form-control">
+<span asp-validation-for="Konu" class="text-danger"></span>
+
+
+Views - Home - YorumGonder.cshtml hazırla
+
+
+
+
+
+
+Kullanici sınıfı tanımla
+
+public class Kullanici
+{
+  [Display(Name="Kullanıcı Adı")]
+  [Required(ErrorMessage = "{0} giriniz")]
+  [RegularExpression(@"^[a-zA-Z0-9]*$", ErrorMessage = "Harf ve rakamlardan oluşmalı")]
+  public string KullaniciAdi { get; set; }
+
+  [Display(Name="Şifre")]
+  [Required(ErrorMessage = "{0} giriniz")]
+  [StringLength(10, MinimumLength = 5, ErrorMessage = "{0} {2}-{1} karakter olmalı")]
+  [DataType(DataType.Password)]
+  public string Sifre { get; set; }
+
+  [Display(Name="Şifre (Tekrar)")]
+  [Required(ErrorMessage = "{0} giriniz")]
+  [Compare("Sifre",ErrorMessage="Şifreler aynı olmalı")]
+  [DataType(DataType.Password)]
+  public string SifreTekrar { get; set; }
+
+  [Display(Name="E-posta Adresi")]
+  [EmailAddress]
+  public string? Eposta { get; set; }
+        
+  [Display(Name="Doğum Tarihi")]
+  [DataType(DataType.Date)]
+  public DateTime? DogumTarihi { get; set; }
+}
+
+
+
+HomeController.cs ekle
+public IActionResult Kayit()
+{
+  return View();
+}
+
+[HttpPost]
+public IActionResult Kayit(Kullanici model)
+{
+  if(!ModelState.IsValid) {
+    return View(model);
+  } 
+  return RedirectToAction("Index");
+}
+
+
+Views - Home - Kayit.cshtml hazırla

@@ -1,0 +1,11 @@
+Views klasörüne _ViewImports.cshtml dosyası ekle
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+Tüm linklerdeki href leri sil ve aşağıdaki gibi değiştir
+
+<a asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+
+<a class="btn btn-outline-primary btn-sm" asp-controller="Urun" asp-action="Detay" asp-route-id="@item.Id">Detay</a>
