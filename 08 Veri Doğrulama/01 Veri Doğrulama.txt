@@ -114,3 +114,9 @@ public IActionResult Kayit(Kullanici model)
 
 
 Views - Home - Kayit.cshtml hazırla
+
+
+
+VALIDATION SUMMARY
+Eğer doğrulama hatalarını liste halinde tek bir yerden vermek istersen view da kullan
+<div asp-validation-summary="All"></div>
