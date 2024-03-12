@@ -1,0 +1,37 @@
+<!-- Icerik -->
+<div class="container mt-4">
+    <div class="mb-3">
+        <h2>Ürünler</h2>
+
+        <a asp-action="UrunEkle" class="btn btn-primary mb-3">Ekle</a>
+        <!-- Urun Listesi -->
+        <table class="table table-striped align-middle">
+            <thead>
+                <tr>
+                    <th>Ürün Adı</th>
+                    <th>Fiyat</th>
+                    <th>Kategori Adı</th>
+                    <th>İşlem</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Ürün</td>
+                <td>100 TL</td>
+                <td>Kategori</td>
+                <td>
+                    <a asp-action="UrunGuncelle" class="btn btn-outline-primary">Güncelle</a>
+                    <a asp-action="UrunSil" class="btn btn-outline-primary">Sil</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Ürün</td>
+                <td>100 TL</td>
+                <td>Kategori</td>
+                <td>
+                    <a asp-action="UrunGuncelle" class="btn btn-outline-primary">Güncelle</a>
+                    <a asp-action="UrunSil" class="btn btn-outline-primary">Sil</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

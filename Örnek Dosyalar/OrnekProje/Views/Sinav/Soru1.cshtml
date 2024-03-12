@@ -1,0 +1,30 @@
+@model int
+
+<h1>Soru 1</h1>
+<h2>@ViewData["selamla"]</h2>
+
+<form method="post">
+
+    <p>
+        Sayı 1<br>
+        <input type="text" name="sayi1">
+    </p>
+
+    <p>
+        Sayı 2<br>
+        <input type="text" name="sayi2">
+    </p>
+
+    <p><button type="submit">Tamam</button></p>
+
+</form>
+
+
+<h2>Sayıların toplamı: @Model</h2>
+<h2>Gelen mesaj: @ViewData["mesaj"]</h2>
+<ul>
+    @for (int i = 1; i <= Model; i++)
+    {
+        <li>@i</li>
+    }
+</ul>
