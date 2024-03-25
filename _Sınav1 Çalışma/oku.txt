@@ -1,0 +1,8 @@
+Araba class ında marka, model, yıl yazılırken model yerine modeli kullan (mvc deki model ile çakışır)
+
+
+Soru2 de veri doğrulamasını sayfa yenilenmeden js ile yapmak için view dosyasına eklenebilir.
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"></partial>
+}

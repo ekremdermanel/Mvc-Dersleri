@@ -1,0 +1,31 @@
+@model Araba
+
+<h1>Soru 2</h1>
+
+<form method="post">
+
+    <p>
+        <label asp-for="Marka"></label><br>
+        <input asp-for="Marka">
+        <span asp-validation-for="Marka"></span>
+    </p>
+
+    <p>
+        <label asp-for="Modeli"></label><br>
+        <input asp-for="Modeli">
+        <span asp-validation-for="Modeli"></span>
+    </p>
+
+    <p>
+        <label asp-for="Yil"></label><br>
+        <input asp-for="Yil">
+        <span asp-validation-for="Yil"></span>
+    </p>
+
+    <p><button type="submit">Tamam</button></p>
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"></partial>
+}

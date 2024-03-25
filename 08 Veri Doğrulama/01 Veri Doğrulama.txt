@@ -120,3 +120,16 @@ Views - Home - Kayit.cshtml hazırla
 VALIDATION SUMMARY
 Eğer doğrulama hatalarını liste halinde tek bir yerden vermek istersen view da kullan
 <div asp-validation-summary="All"></div>
+
+
+
+JAVASCRIPT İLE KULLANICI TARAFLI ANLIK KONTROL
+
+_Layout ta body nin en altında doğrulama scriptlerinin çağırılması gerekir.
+
+<script src="~/js/jquery.validate.min.js"></script>
+<script src="~/js/jquery.validate.unobtrusive.min.js"></script>
+
+Her sayfada kullanmak istenmiyorsa;
+_Layout taki bu alanda bir Section oluştur
+Sadece istenilen sayfalardan js leri çağır

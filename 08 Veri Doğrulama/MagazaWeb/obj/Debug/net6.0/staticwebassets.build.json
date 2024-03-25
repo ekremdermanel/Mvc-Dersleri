@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zfbzFuOc38Qp9qa1PGUhmcImO1DWtl77S+Bc4nfsFu8=",
+  "Hash": "ddg8Mfpu43bcR5cAdzMxkeuvS3y9UflR3tq6Za8TgKM=",
   "Source": "MagazaWeb",
   "BasePath": "_content/MagazaWeb",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "MagazaWeb\\wwwroot",
       "Source": "MagazaWeb",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
       "BasePath": "_content/MagazaWeb",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\css\\bootstrap-icons.css",
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\css\\bootstrap-icons.css",
       "SourceId": "MagazaWeb",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
       "BasePath": "_content/MagazaWeb",
       "RelativePath": "css/bootstrap-icons.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-icons.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\css\\bootstrap.min.css",
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "MagazaWeb",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
       "BasePath": "_content/MagazaWeb",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\css\\fonts\\bootstrap-icons.woff",
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\css\\fonts\\bootstrap-icons.woff",
       "SourceId": "MagazaWeb",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
       "BasePath": "_content/MagazaWeb",
       "RelativePath": "css/fonts/bootstrap-icons.woff",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\fonts\\bootstrap-icons.woff"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\image\\spinner.gif",
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\image\\spinner.gif",
       "SourceId": "MagazaWeb",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
       "BasePath": "_content/MagazaWeb",
       "RelativePath": "image/spinner.gif",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\image\\spinner.gif"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\image\\urun.png",
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\image\\urun.png",
       "SourceId": "MagazaWeb",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
       "BasePath": "_content/MagazaWeb",
       "RelativePath": "image/urun.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\image\\urun.png"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "MagazaWeb",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
       "BasePath": "_content/MagazaWeb",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -119,27 +119,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\js\\jquery-3.7.0.min.js",
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\js\\jquery.inputmask.min.js",
       "SourceId": "MagazaWeb",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\",
-      "BasePath": "_content/MagazaWeb",
-      "RelativePath": "js/jquery-3.7.0.min.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\jquery-3.7.0.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\js\\jquery.inputmask.min.js",
-      "SourceId": "MagazaWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
       "BasePath": "_content/MagazaWeb",
       "RelativePath": "js/jquery.inputmask.min.js",
       "AssetKind": "All",
@@ -153,10 +136,61 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.inputmask.min.js"
     },
     {
-      "Identity": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\js\\popper.min.js",
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\js\\jquery.min.js",
       "SourceId": "MagazaWeb",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Administrator\\Desktop\\Magaza\\08 Veri Doğruama\\MagazaWeb\\wwwroot\\",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
+      "BasePath": "_content/MagazaWeb",
+      "RelativePath": "js/jquery.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
+    },
+    {
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\js\\jquery.validate.min.js",
+      "SourceId": "MagazaWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
+      "BasePath": "_content/MagazaWeb",
+      "RelativePath": "js/jquery.validate.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.validate.min.js"
+    },
+    {
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\js\\jquery.validate.unobtrusive.min.js",
+      "SourceId": "MagazaWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
+      "BasePath": "_content/MagazaWeb",
+      "RelativePath": "js/jquery.validate.unobtrusive.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\js\\popper.min.js",
+      "SourceId": "MagazaWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\08 Veri Doğrulama\\MagazaWeb\\wwwroot\\",
       "BasePath": "_content/MagazaWeb",
       "RelativePath": "js/popper.min.js",
       "AssetKind": "All",
