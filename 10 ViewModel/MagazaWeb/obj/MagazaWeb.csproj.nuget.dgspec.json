@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\Ders\\Mvc\\Mvc-Dersleri\\10 ViewModel\\MagazaWeb\\MagazaWeb.csproj": {}
+    "F:\\Ders\\Mvc\\Mvc-Dersleri\\10 ViewModel\\MagazaWeb\\MagazaWeb.csproj": {}
   },
   "projects": {
-    "f:\\Ders\\Mvc\\Mvc-Dersleri\\10 ViewModel\\MagazaWeb\\MagazaWeb.csproj": {
+    "F:\\Ders\\Mvc\\Mvc-Dersleri\\10 ViewModel\\MagazaWeb\\MagazaWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Ders\\Mvc\\Mvc-Dersleri\\10 ViewModel\\MagazaWeb\\MagazaWeb.csproj",
+        "projectUniqueName": "F:\\Ders\\Mvc\\Mvc-Dersleri\\10 ViewModel\\MagazaWeb\\MagazaWeb.csproj",
         "projectName": "MagazaWeb",
-        "projectPath": "f:\\Ders\\Mvc\\Mvc-Dersleri\\10 ViewModel\\MagazaWeb\\MagazaWeb.csproj",
+        "projectPath": "F:\\Ders\\Mvc\\Mvc-Dersleri\\10 ViewModel\\MagazaWeb\\MagazaWeb.csproj",
         "packagesPath": "C:\\Users\\Ekrem\\.nuget\\packages\\",
-        "outputPath": "f:\\Ders\\Mvc\\Mvc-Dersleri\\10 ViewModel\\MagazaWeb\\obj\\",
+        "outputPath": "F:\\Ders\\Mvc\\Mvc-Dersleri\\10 ViewModel\\MagazaWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
