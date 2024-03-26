@@ -44,18 +44,6 @@ AdminController'da UrunController gibi ürün listesi hazırla
 Urun action ve view hazırla
 Urun view unda döngü kullan. Güncelle ve Sil linklerinde asp-route-id belirt
 
-
-UrunEkle, UrunGuncelle, UrunSil action ve view ları hazırla
-UrunEkle ve UrunGuncelle view larını Urun modeli kullanarak hazırla
-Veri doğrulama kontrollerini yap (Js ile anlık kontrol edilebilir)
-
-
-@section Scriptler {
-    <script src="~/admin/js/jquery.validate.min.js"></script>
-    <script src="~/admin/js/jquery.validate.unobtrusive.min.js"></script>
-}
-
-
 using MagazaWeb.Models;
 
 List<Urun> urunler = new List<Urun> {
@@ -71,6 +59,21 @@ public IActionResult Urun()
 {
     return View(urunler);
 }
+
+
+UrunEkle, UrunGuncelle, UrunSil action ve view ları hazırla
+UrunEkle ve UrunGuncelle view larını Urun modeli kullanarak hazırla
+Veri doğrulama kontrollerini yap (Js ile anlık kontrol edilebilir)
+
+
+@section Scriptler {
+    <script src="~/admin/js/jquery.validate.min.js"></script>
+    <script src="~/admin/js/jquery.validate.unobtrusive.min.js"></script>
+}
+
+Views - Admin - UrunGuncelle view unda eklenme tarihini gizli form öğesi yap
+Eklenme tarihi kayıt güncellense de aynı kalması gerekir
+<input type="hidden" asp-for="EklenmeTarihi" class="form-control">
 
 public IActionResult UrunEkle()
 {

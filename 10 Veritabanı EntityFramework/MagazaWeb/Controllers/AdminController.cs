@@ -39,7 +39,6 @@ namespace MagazaWeb.Controllers
             model.EklenmeTarihi=DateTime.Now;
             context.Urunler.Add(model);
             context.SaveChanges();
-            
             return RedirectToAction("Urun");
         }
 
