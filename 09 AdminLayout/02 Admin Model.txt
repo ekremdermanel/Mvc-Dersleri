@@ -1,0 +1,109 @@
+Urun.cs düzenle
+EklenmeTarihi ekle
+
+public class Urun
+{
+  public int Id { get; set; }
+  public string UrunAdi { get; set; }
+  public decimal? Fiyat { get; set; }
+  public int? Stok { get; set; }
+  public string? Aciklama { get; set; }
+  public DateTime EklenmeTarihi { get; set; }
+}
+
+
+Veri doğrulamaları yaz
+
+public class Urun
+{
+  public int Id { get; set; }
+
+  [Display(Name = "Ürün Adı")]
+  [Required(ErrorMessage = "{0} giriniz")]
+  [StringLength(20, MinimumLength = 3, ErrorMessage = "{0} {2}-{1} karakter olmalı")]
+  public string UrunAdi { get; set; }
+
+  [Display(Name = "Ürün Fiyatı")]
+  [Required(ErrorMessage = "{0} giriniz")]
+  public decimal? Fiyat { get; set; }
+
+  [Display(Name = "Stok Adedi")]
+  [Required(ErrorMessage = "{0} giriniz")]
+  [Range(0, 100, ErrorMessage = "{0} {1}-{2} arası olmalı")]
+  public int? Stok { get; set; }
+
+  [Display(Name = "Açıklama")]
+  public string? Aciklama { get; set; }
+
+  public DateTime EklenmeTarihi { get; set; }
+}
+
+
+
+AdminController'da UrunController gibi ürün listesi hazırla
+Urun action ve view hazırla
+Urun view unda döngü kullan. Güncelle ve Sil linklerinde asp-route-id belirt
+
+
+UrunEkle, UrunGuncelle, UrunSil action ve view ları hazırla
+UrunEkle ve UrunGuncelle view larını Urun modeli kullanarak hazırla
+Veri doğrulama kontrollerini yap (Js ile anlık kontrol edilebilir)
+
+
+@section Scriptler {
+    <script src="~/admin/js/jquery.validate.min.js"></script>
+    <script src="~/admin/js/jquery.validate.unobtrusive.min.js"></script>
+}
+
+
+using MagazaWeb.Models;
+
+List<Urun> urunler = new List<Urun> {
+    new Urun { Id = 1, UrunAdi = "Iphone 14", Fiyat = 40000, Stok = 10, Aciklama = "Çok pahalı almayın" },
+    new Urun { Id = 2, UrunAdi = "Samsung A22", Fiyat = 30000, Stok = 5 , Aciklama = "Güzel ürün"},
+    new Urun { Id = 3, UrunAdi = "Xiaomi Note 9", Fiyat = 15000, Stok = 50, Aciklama = "İyi" },
+    new Urun { Id = 4, UrunAdi = "Noika 3310", Fiyat = 1000, Stok = 1 , Aciklama = "Tuğla"},
+    new Urun { Id = 5, UrunAdi = "Huawei P40", Fiyat = 30000, Stok = 3, Aciklama = "Güzel ürün" },
+    new Urun { Id = 6, UrunAdi = "Oppo A15", Fiyat = 15000, Stok = 10, Aciklama = "Kamerası iyi" }
+};
+
+public IActionResult Urun()
+{
+    return View(urunler);
+}
+
+public IActionResult UrunEkle()
+{
+    return View();
+}
+
+[HttpPost]
+public IActionResult UrunEkle(Urun model)
+{
+    if (!ModelState.IsValid)
+    {
+    return View(model);
+    }
+    return RedirectToAction("Urun");
+}
+
+public IActionResult UrunGuncelle(int id)
+{
+    Urun kayit = urunler.FirstOrDefault(x => x.Id == id);
+    return View(kayit);
+}
+
+[HttpPost]
+public IActionResult UrunGuncelle(Urun model)
+{
+    if (!ModelState.IsValid)
+    {
+    return View(model);
+    }
+    return RedirectToAction("Urun");
+}
+
+public IActionResult UrunSil(int id)
+{
+    return RedirectToAction("Urun");
+}

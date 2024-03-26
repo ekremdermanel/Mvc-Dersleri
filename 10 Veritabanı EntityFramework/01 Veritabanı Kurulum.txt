@@ -1,0 +1,55 @@
+*******************************
+VERİTABANI SEÇİMİ
+*******************************
+
+MySQL Server
+https://dev.mysql.com/downloads/installer/
+
+veya 
+
+Microsoft SQL Server Express
+https://www.microsoft.com/tr-tr/sql-server/sql-server-downloads
+
+veya
+
+SQLite
+(Kurulum yok)
+
+
+*******************************
+MYSQL KURULUMU
+*******************************
+
+MySQL kurulumu için gerekli
+
+Microsoft Visual C++ Redistributable latest supported downloads
+https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
+
+Kurulum ekranında MySQL Server kurmak yeterli (Server Only)
+(Eğer MySQL ile ilgili ekstra çalışmalar yapmak istiyorsanız Development olarak kurulum yapılabilir.
+Server ve beraberinde kullanıcı arayüzleri için yazılımlar kurulacaktır.)
+
+Kurulumda kullanıcı adı ve şifre ayarla 
+localhost
+username: root
+password: root
+
+
+*******************************
+ENTITYFRAMEWORK
+*******************************
+
+EntityFramework Veritabanı İşlemleri Aracı
+dotnet tool install --global dotnet-ef
+
+Eğer daha önce yüklendiyse güncelle:
+dotnet tool update --global dotnet-ef
+
+
+*******************************
+VSCODE EKLENTİLERİ
+*******************************
+
+MySQL Shell for VS Code - Oracle Corporation (64 bit)
+SQL Server (mssql) - Microsoft
+SQLite Viewer - Florian Klampfer

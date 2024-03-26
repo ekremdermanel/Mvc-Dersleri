@@ -1,0 +1,134 @@
+Terminal ekranından paketleri ekle
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+MYSQL
+dotnet add package Mysql.EntityFrameworkCore
+
+SQL SERVER
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+SQLITE
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+
+
+
+
+Models klasörüne MagazaContext.cs oluştur
+ef-dbcontext kısayolunu kullanabilirsin
+optionsBuilder ve DbSet satırlarını düzenle
+
+namespace MagazaWeb.Models
+{
+  public class MagazaContext : DbContext
+  {
+    public MagazaContext() { }
+    public MagazaContext(DbContextOptions<MagazaContext> options) : base(options) { }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+      optionsBuilder.UseMySQL("Server=localhost;Database=MagazaDB;Uid=root;Pwd=;");
+      //optionsBuilder.UseSqlServer("Server=L6-01\SQLEXPRESS01;Initial Catalog=MagazaDB;Integrated Security=True");
+      //optionsBuilder.UseSqlite("Data Source=MagazaDB.db");
+    }
+
+    public DbSet<Urun> Urunler { get; set; }
+  }
+}
+
+
+Program.cs ye ekle
+builder.Services.AddDbContext<MagazaContext>();
+(İlk satıra using MagazaWeb.Models; eklenecek)
+
+
+
+AdminController da context alanı oluştur ve kurucu metotta parametreyi ata:
+
+private readonly MagazaContext context;
+
+public AdminController(MagazaContext context)
+{
+  this.context = context;
+}
+
+
+
+Terminalde komutları çalıştır
+dotnet ef migrations add yeni
+dotnet ef database update
+
+
+
+AdminController da urunler listesini silerek aciton ları değiştir
+
+public IActionResult Urun()
+{
+    return View(context.Urunler.ToList());
+}
+
+public IActionResult UrunEkle()
+{
+    return View();
+}
+
+[HttpPost]
+public IActionResult UrunEkle(Urun model)
+{
+    if(!ModelState.IsValid) {
+        return View(model);
+    }
+    model.EklenmeTarihi=DateTime.Now;
+    context.Urunler.Add(model);
+    context.SaveChanges();
+    
+    return RedirectToAction("Urun");
+}
+
+public IActionResult UrunGuncelle(int id)
+{
+    Urun kayit = context.Urunler.FirstOrDefault(x=>x.Id==id);
+    return View(kayit);
+}
+
+[HttpPost]
+public IActionResult UrunGuncelle(Urun model)
+{
+    if(!ModelState.IsValid) {
+        return View(model);
+    }
+    context.Urunler.Update(model);
+    context.SaveChanges();
+    return RedirectToAction("Urun");
+}
+
+public IActionResult UrunSil(int id)
+{
+    Urun kayit = context.Urunler.FirstOrDefault(x=>x.Id==id);
+    context.Urunler.Remove(kayit);
+    context.SaveChanges();
+    return RedirectToAction("Urun");
+}
+
+
+UrunController da context alanı oluştur ve kurucu metotta parametreyi ata:
+
+private readonly MagazaContext context;
+
+public UrunController(MagazaContext context)
+{
+  this.context = context;
+}
+
+UrunController da urunler listesini silerek aciton ları değiştir
+
+public IActionResult Index()
+{
+  return View(context.Urunler.ToList());
+}
+
+public IActionResult Detay(int id)
+{
+  Urun kayit = context.Urunler.FirstOrDefault(x=>x.Id==id);
+  return View(kayit);
+}

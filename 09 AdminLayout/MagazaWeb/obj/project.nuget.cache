@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "MMe6QbMFGtcWx7w+jBhqhHmpbloYeII3hs5VZes6RT1ZewkHKgZM/JIM2oNiBivusL8mb+KjohiXfK7MFCYJqw==",
+  "dgSpecHash": "uamYiLX1kqiU+jw0qnfUTuGdEpyKS0PIqFzifkwIsZQu1zJWyYoJQ459LLSWXL4e5Ukwu+WhMuh7xeTQUgWEoA==",
   "success": true,
-  "projectFilePath": "f:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\MagazaWeb.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "c:\\Users\\Administrator\\Desktop\\admin model\\MagazaWeb\\MagazaWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
+  ],
   "logs": []
 }

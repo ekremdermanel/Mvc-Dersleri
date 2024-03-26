@@ -5,64 +5,67 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MagazaWeb
 build_property.RootNamespace = MagazaWeb
-build_property.ProjectDir = F:\Ders\Mvc\Mvc-Dersleri\09 AdminLayout\MagazaWeb\
+build_property.ProjectDir = c:\Users\Administrator\Desktop\admin model\MagazaWeb\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\Ders\Mvc\Mvc-Dersleri\09 AdminLayout\MagazaWeb
+build_property.MSBuildProjectDirectory = c:\Users\Administrator\Desktop\admin model\MagazaWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/Admin/Index.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/Admin/Urun.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/Admin/Urun.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXJ1bi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/Admin/UrunEkle.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/Admin/UrunEkle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXJ1bkVrbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/Admin/UrunGuncelle.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/Admin/UrunGuncelle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXJ1bkd1bmNlbGxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/Admin/_ViewStart.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/Admin/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/Home/Hakkimizda.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/Home/Hakkimizda.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWtraW1pemRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/Home/Index.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/Shared/_AdminLayout.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/Shared/_Layout.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/Urun/Detay.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/Urun/Detay.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blxEZXRheS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/Urun/Index.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/Urun/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/_ViewImports.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Ders/Mvc/Mvc-Dersleri/09 AdminLayout/MagazaWeb/Views/_ViewStart.cshtml]
+[c:/Users/Administrator/Desktop/admin model/MagazaWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

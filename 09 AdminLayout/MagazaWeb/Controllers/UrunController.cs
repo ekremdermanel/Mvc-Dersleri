@@ -29,8 +29,8 @@ namespace MagazaWeb.Controllers
 
     public IActionResult Detay(int id)
     {
-      Urun urun = urunler.FirstOrDefault(x=>x.Id==id);
-      return View(urun);
+      Urun kayit = urunler.FirstOrDefault(x=>x.Id==id);
+      return View(kayit);
     }
   }
 }
