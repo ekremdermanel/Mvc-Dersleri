@@ -1,0 +1,42 @@
+@model Urun
+
+<!-- Icerik -->
+<div class="container mt-4">
+    <div class="mb-3">
+
+        <h2>Ürün Ekle</h2>
+
+        <form method="post">
+            <div class="mb-3">
+                <label asp-for="UrunAdi"></label>
+                <input asp-for="UrunAdi" class="form-control">
+                <span asp-validation-for="UrunAdi" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="KategoriId"></label>
+                <select asp-for="KategoriId" asp-items="@ViewBag.Kategoriler" class="form-select">
+                    <option value="">Seçiniz</option>
+                </select>
+                <span asp-validation-for="KategoriId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Fiyat"></label>
+                <input asp-for="Fiyat" class="form-control">
+                <span asp-validation-for="Fiyat" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Stok"></label>
+                <input asp-for="Stok" class="form-control">
+                <span asp-validation-for="Stok" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Aciklama"></label>
+                <textarea asp-for="Aciklama" class="form-control"></textarea>
+                <span asp-validation-for="Aciklama" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Tamam</button>
+
+        </form>
+
+    </div>
+</div>

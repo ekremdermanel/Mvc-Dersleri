@@ -1,0 +1,141 @@
+************************************
+Kategoriler Tablosu Oluşturma
+************************************
+
+Models - Kategori sınıfı oluştur
+
+public class Kategori
+{
+    public int Id { get; set; }
+
+    [Display(Name = "Kategori Adı")]
+    [Required(ErrorMessage = "{0} giriniz")]
+    [StringLength(20, MinimumLength = 3, ErrorMessage = "{0} {2}-{1} karakter olmalı")]
+    public string KategoriAdi { get; set; }
+
+    [Display(Name = "Kategori Sloganı")]
+    public string? Slogan { get; set; }
+}
+
+AdminController Kategori, KategoriEkle, KategoriGuncelle, KategoriSil metodlarını hazırla
+
+Views - Admin - Kategori, KategoriEkle, KategoriGuncelle view larını hazırla 
+
+AdminLayout Kategoriler linki ekle
+
+
+************************************
+Urun - Kategori İlişkisini Verme
+************************************
+
+Ürünler ile ilişki kurulacak özelliği ekle
+
+public List<Urun>? Urunler { get; set; }
+
+
+
+Models - Urun sınıfına kategori ile ilişkili alanları ekle
+
+[Display(Name = "Ürün Kategorisi")]
+[Required(ErrorMessage = "{0} seçiniz")]
+public int? KategoriId { get; set; }
+public Kategori? Kategori { get; set; }
+
+
+MagazaContext içerisine Kategoriler DbSet i ekle
+public DbSet<Kategori> Kategoriler { get; set; }
+
+
+************************************
+Admin - UrunEkle ve UrunGuncelle Sayfalarında Kategori Listesini Gösterme
+************************************
+
+AdminController - UrunEkle ve UrunGuncelle action larında kategori listesi için ViewBag oluştur.
+
+SelectList kategoriler = new SelectList(context.Kategoriler, "Id", "KategoriAdi");
+ViewBag.Kategoriler = kategoriler;
+
+Aynı kodu veri if(!ModelState.IsValid) bloklarında da kullan
+
+
+Views - Admin - UrunEkle ve UrunGuncelle view larına select listeleri ekle
+
+<div class="mb-3">
+    <label asp-for="KategoriId"></label>
+    <select asp-for="KategoriId" asp-items="@ViewBag.Kategoriler" class="form-select">
+        <option value="">Seçiniz</option>
+    </select>
+    <span asp-validation-for="KategoriId" class="text-danger"></span>
+</div>
+
+
+************************************
+Ana Sayfada Kategorileri Listeleme
+************************************
+
+HomeController da veritabanına bağlanmak için context alanı ekle
+
+private readonly MagazaContext context;
+
+public HomeController(MagazaContext context)
+{
+    this.context = context;
+}
+
+
+HomeController - Index action düzenle
+
+public IActionResult Index()
+{
+    return View(context.Kategoriler.ToList());
+}
+
+Views - Home - Index düzenle
+
+@model List<Kategori>
+
+<h2>Kategoriler</h2>
+<ul>
+    <li><a asp-controller="Urun" asp-action="Index">Tümü</a></li>
+    @foreach(var item in Model){
+        <li><a asp-controller="Urun" asp-action="Index" asp-route-id="@item.Id">@item.KategoriAdi</a></li>
+    }
+</ul>
+
+
+
+
+************************************
+Ürün Listesinde Kategorileri Gösterme
+************************************
+
+Ürün listesinde kategori adını görüntülemek için Include("Kategori") kullan
+id gönderildiyse ilgili kategorideki ürünleri, gönderilmediyse tüm ürünleri göster
+
+
+public IActionResult Index(int? id)
+{
+    if (id == null)
+    {
+    ViewBag.ListeBasligi = "Tüm Ürünler";
+    return View(context.Urunler.Include("Kategori").ToList());
+    }
+    else
+    {
+    Kategori kayit = context.Kategoriler.FirstOrDefault(x => x.Id == id);
+    ViewBag.ListeBasligi = kayit.KategoriAdi + " - " + kayit.Slogan;
+    return View(context.Urunler.Include("Kategori").Where(x => x.KategoriId == id).ToList());
+    }
+}
+
+
+Views - Urun - Index.cshtml düzenle
+
+<h2>@ViewBag.ListeBasligi</h2>
+
+
+
+
+
+
+

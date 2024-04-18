@@ -1,0 +1,29 @@
+@model List<Kategori>
+
+<!-- Icerik -->
+<div class="container mt-4">
+    <div class="mb-3">
+        <h2>Kategoriler</h2>
+
+        <a asp-action="KategoriEkle" class="btn btn-primary mb-3">Ekle</a>
+        <!-- Urun Listesi -->
+        <table class="table table-striped align-middle">
+            <thead>
+                <tr>
+                    <th>Kategori Adı</th>
+                    <th>İşlem</th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr>
+                <td>@item.KategoriAdi</td>
+                <td>
+                    <a asp-action="KategoriGuncelle" asp-route-id="@item.Id" class="btn btn-outline-primary">Güncelle</a>
+                    <a asp-action="KategoriSil" asp-route-id="@item.Id" class="btn btn-outline-primary">Sil</a>
+                </td>
+            </tr>
+            }
+        </table>
+    </div>
+</div>
