@@ -1,0 +1,14 @@
+Sqlite paketini yükle
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+
+
+MagazaContext düzenle
+optionsBuilder.UseSqlite("Data Source=./wwwroot/MagazaDB.db");
+
+
+Terminalde dotnet ef komutlarını çalıştır
+dotnet ef migrations add yeni
+dotnet ef database update
+
+
+

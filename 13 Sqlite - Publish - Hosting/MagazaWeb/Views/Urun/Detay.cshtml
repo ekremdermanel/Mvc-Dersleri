@@ -1,0 +1,27 @@
+@model Urun
+
+@{
+    string resim="urun.png";
+    if(Model.ResimAdi!=null) {
+        resim=Model.ResimAdi;
+    }
+}
+
+<!-- Ürün Detay -->
+<div class="card">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-fluid rounded-start" src="~/image/@resim" alt="..." />
+        </div>
+        <div class="col-md-6">
+            <div class="card-body">
+                <h2 class="card-title">@Model.UrunAdi</h2>
+                <p class="card-text">@Model.Fiyat TL</p>
+                @if(Model.Stok<10) {
+                    <p class="card-text text-danger">Son @Model.Stok ürün</p>
+                }
+                <p class="card-text small">@Model.Aciklama</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,147 @@
+Models - Urun.cs düzenle
+
+public string? ResimAdi { get; set; }
+[NotMapped]
+public IFormFile? Resim { get; set; }
+
+
+Veritabanında string tipinde ResimAdi saklanacak
+IFormFile Resim kullanıcının ürün eklerken veya güncellerken bilgisayarına gözatması için gerekli.
+Resim alanı veritabanında tutulmayacağı için NotMapped ifadesi yazılır.
+
+
+
+Resim boyutlandırma için paketi yükle
+
+dotnet add package SixLabors.ImageSharp
+
+
+******************************************
+ÜRÜN EKLE
+******************************************
+
+Views - Admin - UrunEkle.cshtml
+
+form etiketini düzenle
+enctype="multipart/form-data"
+
+<div class="mb-3">  
+  <label asp-for="Resim"></label>
+  <input asp-for="Resim" class="form-control">
+  <span asp-validation-for="Resim" class="text-danger"></span>
+</div>
+
+
+
+AdminController - UrunEkle (HttpPost) action düzenle
+
+if(model.Resim != null) {
+  string resimUzantisi = Path.GetExtension(model.Resim.FileName);
+  string resimAdi = Guid.NewGuid() + resimUzantisi;
+  string resimYolu = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/image/{resimAdi}");
+  var img = Image.Load(model.Resim.OpenReadStream());
+  img.Mutate(x => x.Resize(750,510));
+  img.Save(resimYolu);
+  model.ResimAdi=resimAdi;
+}
+
+
+******************************************
+ÜRÜN GÖSTER
+******************************************
+
+Views - Urun - Index ve Detay sayfalarını düzenle
+
+@{
+    string resim="urun.png";
+    if(Model.ResimAdi!=null) {
+        resim=Model.ResimAdi;
+    }
+}
+
+<img class="img-fluid rounded-start" src="~/image/@resim" alt="..." />
+
+
+******************************************
+ÜRÜN SİL
+******************************************
+
+AdminController - UrunSil action düzenle
+
+string resimYolu = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/image/{kayit.ResimAdi}");
+FileInfo file = new FileInfo(resimYolu);
+if(file.Exists) {
+  file.Delete();
+}
+
+
+******************************************
+ÜRÜN GÜNCELLE
+******************************************
+
+Views - Admin - UrunGuncelle.cshtml
+
+form etiketini düzenle
+enctype="multipart/form-data"
+
+<div class="mb-3">
+    <label asp-for="Resim"></label>
+    <input asp-for="Resim" class="form-control">
+    <span asp-validation-for="Resim" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    @{
+        string resim="urun.png";
+        if(Model.ResimAdi!=null) {
+            resim=Model.ResimAdi;
+        }
+    }
+    <input type="hidden" asp-for="ResimAdi" class="form-control">
+    <img src="/image/@resim" alt=""  class="img-thumbnail" style="height: 100px;">
+    @if(Model.ResimAdi!=null) {
+        <button asp-action="ResimSil" asp-route-id="@Model.Id" class="btn btn-secondary btn-sm">Resim Sil</button>
+    }
+</div>
+
+AdminController - UrunGuncelle (HttpPost) action düzenle
+
+if(model.Resim != null) {
+    string resimYolu = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/image/{model.ResimAdi}");
+    FileInfo file = new FileInfo(resimYolu);
+    if(file.Exists) {
+        file.Delete();
+    }
+
+    string resimUzantisi = Path.GetExtension(model.Resim.FileName);
+    string resimAdi = Guid.NewGuid() + resimUzantisi;
+    resimYolu = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/image/{resimAdi}");
+    var img = Image.Load(model.Resim.OpenReadStream());
+    img.Mutate(x => x.Resize(750,510));
+    img.Save(resimYolu);
+    model.ResimAdi=resimAdi;
+}
+
+
+AdminController - ResimSil action ekle
+
+public IActionResult ResimSil(int id)
+{
+    Urun kayit = context.Urunler.FirstOrDefault(x=>x.Id==id);
+
+    string resimYolu = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot/image/{kayit.ResimAdi}");
+    FileInfo file = new FileInfo(resimYolu);
+    if(file.Exists) {
+        file.Delete();
+    }
+
+    kayit.ResimAdi = null;
+    context.Urunler.Update(kayit);
+    context.SaveChanges();
+    return RedirectToAction("UrunGuncelle", new{ id });
+}
+
+
+
+
+
+

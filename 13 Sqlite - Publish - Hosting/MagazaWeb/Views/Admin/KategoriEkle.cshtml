@@ -1,0 +1,25 @@
+@model Kategori
+
+<!-- Icerik -->
+<div class="container mt-4">
+    <div class="mb-3">
+
+        <h2>Kategori Ekle</h2>
+
+        <form method="post">
+            <div class="mb-3">
+                <label asp-for="KategoriAdi"></label>
+                <input asp-for="KategoriAdi" class="form-control">
+                <span asp-validation-for="KategoriAdi" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Slogan"></label>
+                <input asp-for="Slogan" class="form-control">
+                <span asp-validation-for="Slogan" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Tamam</button>
+
+        </form>
+
+    </div>
+</div>

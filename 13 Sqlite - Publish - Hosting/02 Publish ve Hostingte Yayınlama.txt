@@ -1,0 +1,6 @@
+Terminalde publish komutunu çalıştır
+dotnet publish
+
+
+bin - Release - net8.0 - publish
+klasörünün içindeki dosyaları hostinge gönder
