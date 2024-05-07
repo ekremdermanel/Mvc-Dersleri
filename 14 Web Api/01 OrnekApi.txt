@@ -1,0 +1,5 @@
+dotnet new webapi -controllers
+
+dotnet run
+
+http://localhost:5156/swagger

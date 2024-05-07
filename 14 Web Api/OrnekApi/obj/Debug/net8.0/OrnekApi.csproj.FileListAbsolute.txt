@@ -1,0 +1,65 @@
+C:\Users\Ekrem\Desktop\api\OrnekApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Ekrem\Desktop\api\OrnekApi\bin\Debug\net8.0\appsettings.json
+C:\Users\Ekrem\Desktop\api\OrnekApi\bin\Debug\net8.0\OrnekApi.exe
+C:\Users\Ekrem\Desktop\api\OrnekApi\bin\Debug\net8.0\OrnekApi.deps.json
+C:\Users\Ekrem\Desktop\api\OrnekApi\bin\Debug\net8.0\OrnekApi.runtimeconfig.json
+C:\Users\Ekrem\Desktop\api\OrnekApi\bin\Debug\net8.0\OrnekApi.dll
+C:\Users\Ekrem\Desktop\api\OrnekApi\bin\Debug\net8.0\OrnekApi.pdb
+C:\Users\Ekrem\Desktop\api\OrnekApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Ekrem\Desktop\api\OrnekApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Ekrem\Desktop\api\OrnekApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Ekrem\Desktop\api\OrnekApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\OrnekApi.csproj.AssemblyReference.cache
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\OrnekApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\OrnekApi.AssemblyInfoInputs.cache
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\OrnekApi.AssemblyInfo.cs
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\OrnekApi.csproj.CoreCompileInputs.cache
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\OrnekApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\OrnekApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\staticwebassets\msbuild.OrnekApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\staticwebassets\msbuild.build.OrnekApi.props
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OrnekApi.props
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OrnekApi.props
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\scopedcss\bundle\OrnekApi.styles.css
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\OrnekApi.csproj.Up2Date
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\OrnekApi.dll
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\refint\OrnekApi.dll
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\OrnekApi.pdb
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\OrnekApi.genruntimeconfig.cache
+C:\Users\Ekrem\Desktop\api\OrnekApi\obj\Debug\net8.0\ref\OrnekApi.dll
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\bin\Debug\net8.0\appsettings.Development.json
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\bin\Debug\net8.0\appsettings.json
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\bin\Debug\net8.0\OrnekApi.exe
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\bin\Debug\net8.0\OrnekApi.deps.json
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\bin\Debug\net8.0\OrnekApi.runtimeconfig.json
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\bin\Debug\net8.0\OrnekApi.dll
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\bin\Debug\net8.0\OrnekApi.pdb
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.csproj.AssemblyReference.cache
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.GeneratedMSBuildEditorConfig.editorconfig
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.AssemblyInfoInputs.cache
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.AssemblyInfo.cs
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.csproj.CoreCompileInputs.cache
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.MvcApplicationPartsAssemblyInfo.cs
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.MvcApplicationPartsAssemblyInfo.cache
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.sourcelink.json
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\staticwebassets.build.json
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\staticwebassets.development.json
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\staticwebassets\msbuild.OrnekApi.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\staticwebassets\msbuild.build.OrnekApi.props
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OrnekApi.props
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OrnekApi.props
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\staticwebassets.pack.json
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\scopedcss\bundle\OrnekApi.styles.css
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.csproj.Up2Date
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.dll
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\refint\OrnekApi.dll
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.pdb
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\OrnekApi.genruntimeconfig.cache
+F:\Ders\Mvc\Mvc-Dersleri\14 Web Api\OrnekApi\obj\Debug\net8.0\ref\OrnekApi.dll

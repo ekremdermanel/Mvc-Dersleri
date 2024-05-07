@@ -1,0 +1,133 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\assets\\demo\\chart-area-demo.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\demo\\chart-area-demo.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\assets\\demo\\chart-bar-demo.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\demo\\chart-bar-demo.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\assets\\demo\\chart-pie-demo.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\demo\\chart-pie-demo.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\assets\\demo\\datatables-demo.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\demo\\datatables-demo.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\assets\\img\\error-404-monochrome.svg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\error-404-monochrome.svg"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\css\\styles.css",
+      "PackagePath": "staticwebassets\\admin\\css\\styles.css"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\extras\\Chart.min.js",
+      "PackagePath": "staticwebassets\\admin\\extras\\Chart.min.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\extras\\all.js",
+      "PackagePath": "staticwebassets\\admin\\extras\\all.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\extras\\all2.js",
+      "PackagePath": "staticwebassets\\admin\\extras\\all2.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\extras\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\admin\\extras\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\extras\\simple-datatables@latest.js",
+      "PackagePath": "staticwebassets\\admin\\extras\\simple-datatables@latest.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\extras\\style.css",
+      "PackagePath": "staticwebassets\\admin\\extras\\style.css"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\js\\datatables-simple-demo.js",
+      "PackagePath": "staticwebassets\\admin\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\js\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\admin\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\admin\\js\\scripts.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\css\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-icons.css"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\css\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\css\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\image\\spinner.gif",
+      "PackagePath": "staticwebassets\\image\\spinner.gif"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\image\\urun.png",
+      "PackagePath": "staticwebassets\\image\\urun.png"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\js\\jquery.inputmask.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.inputmask.min.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\js\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\09 AdminLayout\\MagazaWeb\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MagazaWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MagazaWeb.props",
+      "PackagePath": "build\\MagazaWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MagazaWeb.props",
+      "PackagePath": "buildMultiTargeting\\MagazaWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MagazaWeb.props",
+      "PackagePath": "buildTransitive\\MagazaWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

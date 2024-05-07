@@ -1,0 +1,6 @@
+@MagazaApi_HostAddress = http://localhost:5122
+
+GET {{MagazaApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
