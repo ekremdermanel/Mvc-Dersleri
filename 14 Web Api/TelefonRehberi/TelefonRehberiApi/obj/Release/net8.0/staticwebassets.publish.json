@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "eDjNXvYhDbLwfTzsj209GQ6U8mRz9oBQL9699S9X7cg=",
+  "Source": "TelefonRehberiApi",
+  "BasePath": "_content/TelefonRehberiApi",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TelefonRehberiApi\\wwwroot",
+      "Source": "TelefonRehberiApi",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\14 Web Api\\TelefonRehberi\\TelefonRehberiApi\\wwwroot\\",
+      "BasePath": "_content/TelefonRehberiApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "F:\\Ders\\Mvc\\Mvc-Dersleri\\14 Web Api\\TelefonRehberi\\TelefonRehberiApi\\wwwroot\\TelefonRehberiDB.db",
+      "SourceId": "TelefonRehberiApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Ders\\Mvc\\Mvc-Dersleri\\14 Web Api\\TelefonRehberi\\TelefonRehberiApi\\wwwroot\\",
+      "BasePath": "_content/TelefonRehberiApi",
+      "RelativePath": "TelefonRehberiDB.db",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\TelefonRehberiDB.db"
+    }
+  ]
+}

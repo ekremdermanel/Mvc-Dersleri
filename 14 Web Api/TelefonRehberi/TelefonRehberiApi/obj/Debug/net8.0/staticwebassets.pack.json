@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\Ders\\Mvc\\Mvc-Dersleri\\14 Web Api\\TelefonRehberi\\TelefonRehberiApi\\wwwroot\\TelefonRehberiDB.db",
+      "PackagePath": "staticwebassets\\TelefonRehberiDB.db"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TelefonRehberiApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TelefonRehberiApi.props",
+      "PackagePath": "build\\TelefonRehberiApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TelefonRehberiApi.props",
+      "PackagePath": "buildMultiTargeting\\TelefonRehberiApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TelefonRehberiApi.props",
+      "PackagePath": "buildTransitive\\TelefonRehberiApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

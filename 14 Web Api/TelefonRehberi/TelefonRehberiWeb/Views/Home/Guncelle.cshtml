@@ -1,0 +1,17 @@
+@model Kisi
+
+<h1 class="mb-3">Güncelle</h1>
+
+<form method="post">
+  <div class="form-group mb-3">
+    <label asp-for="AdSoyad"></label>
+    <input asp-for="AdSoyad" class="form-control">
+    <span asp-validation-for="AdSoyad" class="text-danger"></span>
+  </div>
+  <div class="form-group mb-3">
+    <label asp-for="Telefon"></label>
+    <input asp-for="Telefon" class="form-control">
+    <span asp-validation-for="Telefon" class="text-danger"></span>
+  </div>
+  <button type="submit" class="btn btn-primary">Tamam</button>
+</form>

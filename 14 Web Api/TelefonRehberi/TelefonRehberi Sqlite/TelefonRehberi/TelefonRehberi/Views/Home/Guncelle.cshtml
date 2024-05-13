@@ -1,0 +1,15 @@
+@model Kisi
+
+<form method="post">
+  <div class="form-group">
+    <label asp-for="Isim"></label>
+    <input asp-for="Isim" class="form-control">
+    <span asp-validation-for="Isim" class="text-danger"></span>
+  </div>
+  <div class="form-group">
+    <label asp-for="Telefon"></label>
+    <input asp-for="Telefon" class="form-control">
+    <span asp-validation-for="Telefon" class="text-danger"></span>
+  </div>
+  <button type="submit" class="btn btn-primary">Tamam</button>
+</form>

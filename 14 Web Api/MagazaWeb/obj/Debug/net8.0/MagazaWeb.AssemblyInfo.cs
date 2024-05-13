@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MagazaWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73daf574c481eda3a6b57a0080da3551f1136cee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+006a1925eeaca3efb5166eadd0270581815b1b13")]
 [assembly: System.Reflection.AssemblyProductAttribute("MagazaWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MagazaWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "H9zFFTgxALC0ZOj7w8T2iQjHQJJgkSIzQPnA+NL2Qw6RdU94gPIAXRZg684rGg1bWR+arYYMOhti2zkzi0FI1w==",
+  "success": true,
+  "projectFilePath": "F:\\Ders\\Mvc\\Mvc-Dersleri\\14 Web Api\\TelefonRehberi\\TelefonRehberiWeb\\TelefonRehberiWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ekrem\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
