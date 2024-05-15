@@ -1,0 +1,90 @@
+Web Api Projesi oluştur
+
+dotnet new webapi -controllers
+
+
+
+Paketleri Yükle
+
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite 
+
+
+Models - Kisi.cs oluştur
+
+Models - Context oluştur
+
+
+
+Program.cs ye Ekle
+
+builder.Services.AddDbContext<Context>();
+
+
+
+
+Controllers - KisiController oluştur
+
+[ApiController]
+[Route("[controller]")]
+public class KisiController : ControllerBase
+{
+    private readonly Context context;
+
+    public KisiController(Context context)
+    {
+        this.context = context;
+    }
+
+    [HttpGet("Liste")]
+    public IActionResult Liste()
+    {
+        return Ok(context.Kisiler.ToList());
+    }
+
+    [HttpGet("Detay/{id:int}")]
+    public IActionResult Detay([FromRoute] int id)
+    {
+        Kisi kayit = context.Kisiler.FirstOrDefault(x => x.Id == id);
+        return Ok(kayit);
+    }
+
+    [HttpPost("Ekle")]
+    public IActionResult Ekle([FromBody] Kisi model)
+    {
+        context.Kisiler.Add(model);
+        context.SaveChanges();
+        return Ok(model);
+    }
+
+    [HttpDelete("Sil/{id:int}")]
+    public IActionResult Sil([FromRoute] int id)
+    {
+        Kisi kayit = context.Kisiler.FirstOrDefault(x => x.Id == id);
+        context.Kisiler.Remove(kayit);
+        context.SaveChanges();
+        return NoContent();
+    }
+
+    [HttpPut("Guncelle")]
+    public IActionResult Guncelle([FromBody] Kisi model)
+    {
+        context.Kisiler.Update(model);
+        context.SaveChanges();
+        return Ok(model);
+    }
+}
+
+
+
+
+
+
+dotnet run
+
+http://localhost:5156/swagger
+
+
+
+Postman yükle ve dene

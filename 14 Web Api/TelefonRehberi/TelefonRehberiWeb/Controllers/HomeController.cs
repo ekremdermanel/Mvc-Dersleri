@@ -45,7 +45,7 @@ public class HomeController : Controller
     public IActionResult Guncelle(int id)
     {
         HttpClient client = new HttpClient();
-        HttpResponseMessage response = client.GetAsync(apiUrl + string.Format("/Detay/{0}", id)).Result;
+        HttpResponseMessage response = client.GetAsync(apiUrl + "/Detay/" + id).Result;
         Kisi kayit = JsonConvert.DeserializeObject<Kisi>(response.Content.ReadAsStringAsync().Result);
         return View(kayit);
     }
@@ -67,14 +67,14 @@ public class HomeController : Controller
     public IActionResult Sil(int id)
     {
         HttpClient client = new HttpClient();
-        HttpResponseMessage response = client.DeleteAsync(apiUrl + string.Format("/Sil/{0}", id)).Result;
+        HttpResponseMessage response = client.DeleteAsync(apiUrl + "/Sil/" + id).Result;
         return RedirectToAction("Index");
     }
 
     public IActionResult Detay(int id)
     {
         HttpClient client = new HttpClient();
-        HttpResponseMessage response = client.GetAsync(apiUrl + string.Format("/Detay/{0}", id)).Result;
+        HttpResponseMessage response = client.GetAsync(apiUrl + "/Detay/" + id).Result;
         Kisi kayit = JsonConvert.DeserializeObject<Kisi>(response.Content.ReadAsStringAsync().Result);
         return View(kayit);
     }
